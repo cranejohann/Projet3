@@ -1,6 +1,62 @@
-/*design responsive version mobile */
-
 @media all and (max-width: 768px) {
+
+  .header__box-logo {
+    padding: 22px 0px 13px 0px;
+    box-shadow: 0px 5px 5px #e0e1e3;
+    position: relative;
+    background-color: white;
+}
+
+.header__box-position--picto {
+  width: 20px;
+  height: 18px;
+  margin-right: 11px;
+}
+
+.section__box-img--img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.header__box-position {
+    background-color: #eaeaea;
+    font-size: 0.9em;
+    padding: 15px;
+
+    .header__box-logo--logo {
+      width: 164px
+      height: 28px;
+  }
+    
+    .header__box-logo {
+      display: flex;
+      justify-content: center;
+      .header__box-logo--logo {
+        width: 164px
+    px
+    ;
+        height: 28px;
+    }
+  }
+
+
+a {
+    font-family: "Roboto-Medium";
+}
+
+
+
+  .header__box-decouverte--bouton {
+    padding: 15px;
+    margin: 32px 75px 20px 82px;
+    border-radius: 999px;
+    background: linear-gradient(#e872da, #9f5adc);
+    color: white;
+    box-shadow: 0px 5px 5px #e0e1e3;
+    width: 218px;
+    cursor: pointer;
+}
+
+
   body {
     width: auto;
     margin: 0px;
@@ -8,13 +64,13 @@
     box-sizing: border-box;
   }
   
-    
-  
-  #bloc page {
+    #bloc page {
     margin: 0px;
     padding: 0px;
   }
-
+  
+  
+}
   /*entête*/
 
   header {
@@ -33,10 +89,24 @@
     justify-content: center;
 }
 
+.header__box-decouverte--bouton {
+  padding: 15px;
+  margin: 32px 75px 20px 82px;
+  border-radius: 999px;
+  background: linear-gradient(#e872da, #9f5adc);
+  color: white;
+  box-shadow: 0px 5px 5px #e0e1e3;
+  width: 218px;
+  cursor: pointer;
+}
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style-type: none;
     border: none;
-}
+
+    .footer {
+      background-color: #000000;
+      padding: 27px 0px 20px 25px;
+  }
