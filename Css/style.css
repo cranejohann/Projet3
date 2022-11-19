@@ -1,5 +1,3 @@
-@media all and (max-width: 768px) {
-
   .header__box-logo {
     padding: 22px 0px 13px 0px;
     box-shadow: 0px 5px 5px #e0e1e3;
@@ -8,9 +6,18 @@
 }
 
 
-.header__box-logo--logo {
+
+.header__box-logo-logo {
   width: 164px;
   height: 28px;
+    box-sizing: border-box;
+      margin-top: 5px;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+  text-align: center;
 }
 
 .header__box-position {
@@ -26,8 +33,16 @@
   border-radius: 20px 20px 0px 0px;
 }
 
+.restaurant h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  padding: 0 2.5rem;
+}
 
-      .header__box-decouverte--bouton {
+
+
+      .header__box-decouverte-bouton {
         padding: 15px;
         margin: 32px 75px 20px 82px;
         border-radius: 999px;
@@ -47,16 +62,18 @@
       .header__box-logo {
       display: flex;
       justify-content: center;
+    }
+
       .header__box-logo--logo {
-        width: 164px
-    
-    
+        width: -15px;
         height: 28px;
     }
-  }
+  
+    
+    
 
 
-  .header__box-decouverte--bouton {
+  .presentation__explore {
     padding: 15px;
     margin: 32px 75px 20px 82px;
     border-radius: 999px;
@@ -65,12 +82,35 @@
     box-shadow: 0px 5px 5px #e0e1e3;
     width: 218px;
     cursor: pointer;
+    text-align: center;
+    margin-left: -19%;
 }
+
+
+
+
+.function__choice__number {
+  background: #9356DC;
+  color: #FFF;
+  width: 1.625rem;
+  height: 1.625rem;
+  line-height: 1.625rem;
+  border-radius: 50%;
+  font-size: 0.8125rem;
+  text-align: center;
+  position: relative;
+  left: -0.8125rem;
+  display: flex;
+  position: relative;
+  box-sizing: inherit;
+  font-weight: bold;
+}
+
+
 
 
   body {
     width: auto;
-
     box-sizing: border-box;
   }
   
@@ -92,7 +132,7 @@
     justify-content: center;
 }
 
-.header__box-decouverte--bouton {
+.header__box-decouverte-bouton {
   padding: 15px;
   margin: 32px 75px 20px 82px;
   border-radius: 999px;
@@ -104,7 +144,7 @@
 }
 
 
-}
+
 .fas {
   margin-right: 20px;
 }
@@ -119,6 +159,8 @@ h1 {
   padding: 20px 0;
   font-weight: bold;
   width: 100%;
+  padding: 1em;
+    margin-bottom: 2.1875em;
 }
 .presentation {
   display: flex;
@@ -127,11 +169,27 @@ h1 {
   background-color: #f6f6f6;
   padding: 40px 40px;
   margin-bottom: 50px;
-  __:book {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    padding: 0 2.5rem;
+}
+
+.presentation__discover {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 1.875rem;
+  padding: 0 1.25rem;
+}
+
+
+
+  __.book {
       font-weight: bold;
       font-size: 25px;
        }
-  __:explore {
+
+  __.explore {
       padding: 22px 20px 22px 20px;
       border-radius: 30px;
       text-align: center;
@@ -142,27 +200,49 @@ h1 {
       background-image: linear-gradient(colour-primary, colour-secondary);
       transition: background-color 250ms;
       box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
-      :hover {
-          opacity: 0.8;
-          box-shadow: 1rem 1rem 20px rgb(0 0 0 / 25%);
-      }
+     
   }
+
+  .explore:hover {
+    opacity: 0.8;
+    box-shadow: 1rem 1rem 20px rgb(0 0 0 / 25%);
 }
+
+
 /*Fonctionnement*/
 .function__title {
   margin: 0 0 20px 22px;
 }
 .function {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 19px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0 15px;
+
+  }
   h2 {
       margin: 0 0 30px 0;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
   }
+
+  .btn-new {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    padding: 15px;
+    color: #0c6b50;
+    background: #99E2D0;
+    border-radius: 3px;
+    text-align: center;
+  }  
+  
+
+ 
   __choice {
       margin: 0 20px 20px 40px;
       font-weight: bold;
@@ -175,17 +255,28 @@ h1 {
       font-family: 'Roboto', sans-serif;
       width: 300px;
       max-height: 78px;
-      _
+      
 }
+
 /*Restaurants*/
-.restaurants {
+/*.restaurants {
   background-color: #f6f6f6;
-  __container {
+
+
+  __.container {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
   }
+
+    body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.2;
+    color: #000;
+
+    
+
   __title {
       padding: 50px 0 10px 22px;
   }
@@ -235,7 +326,7 @@ h1 {
       }
   }
 }
-
+*/
 
 .btn-new {
   background-color: colour-tertiary;
@@ -246,6 +337,8 @@ h1 {
   top: 1rem;
   right: .75rem;
 }
+
+
 .icon__heart svg.heart {
   width: 10px;
   height: 10px;
@@ -255,8 +348,23 @@ h1 {
   width: 10px;
 }
 
-footer {
-  background-color: #353535;
-  padding: 27px 0px 20px 25px;
+
+footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 1.125rem;
+  text-transform: lowercase;
+  margin-bottom: 1.25rem;
 }
 
+
+footer {
+  display: block;
+  box-sizing: inherit;
+  padding: 1.25rem;
+  font-family: "Roboto", sans-serif;
+    line-height: 1.2;
+    background: #353535;
+  padding: 27px 0px 20px 25px;
+
+}
